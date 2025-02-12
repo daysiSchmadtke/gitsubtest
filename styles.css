@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 250px 1fr;
+  background-color: #0e1517;
+  color: #e6e6ee;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header {
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0e1517;
+  z-index: 1;
+  align-items: center;
+}
+
+aside {
+  grid-row: 1 / 3;
+  padding: 30px;
+  margin-left: 100px;
+  margin-top: 70px;
+}
+
+main {
+  grid-column: 2;
+  padding-top: 70px;
+  margin-left: 400px;
+  margin-top: 70px;
+}
+
+section {
+  grid-column: 2;
+  margin-left: 350px;
+  padding: 50px;
+  margin-top: 70px;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: 0.1rem solid #686869;
+  color: #e6e6ee;
+  width: 400px;
+}
+
+#search-bar {
+  border-radius: 4px;
+  width: 700px;
+  margin-left: 40px;
+}
+
+.round-prof {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
+footer {
+  grid-column: 1 / 3;
+  display: flex;
+  padding: 10px 20px;
+}
+
+#my-ft {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.card {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.2rem;
+  justify-content: center;
+}
+
+.prof-card {
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title,
+.card-tech {
+  color: #5095fe;
+}
+
+.card-description,
+.card-update {
+  color: #a9a9a9;
+}
+
+.card-update,
+.card-tech {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+}
+
+.card-update li,
+.card-tech li {
+  margin-right: 5px;
+}
+
+.rate-btn,
+.follow-btn,
+.heart-btn,
+.more-btn {
+  background-color: #686869;
+  color: #e6e6ee;
+  display: flex;
+  justify-self: flex-end;
+  margin-left: 10px;
+}
+
+.follow-btn,
+.heart-btn,
+.more-btn {
+  margin-right: 5px;
+  display: inline;
+  background-color: #282828;
+}
+
+.github-icon {
+  color: #686869;
+}
+
+.card-name,
+.card-summary,
+.card-highlights,
+.card-highlights li,
+.card-organizations li,
+.card-sponsors li,
+.card-location,
+.card-email,
+.card-website,
+.card-x,
+h2,
+h3,
+h6 {
+  font-size: 1rem;
+  color: #e6e6ee;
+}
+
+.card-title,
+.card-followers,
+.card-following,
+h5 {
+  font-size: 1rem;
+  color: #a9a9a9;
+}
+
+svg {
+  margin-right: 10px;
+  vertical-align: middle;
+}
